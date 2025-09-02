@@ -74,7 +74,7 @@
                         </div>
                         <div class="locationBlock__mapLegend">
                             <a href="//maps.app.goo.gl/1NKxaWEbyto1RVup7" class="locationBlock__mapLocation" data-index="1" target="_blank">
-                                <span class="locationBlock__mapLocationAddress">1145 Bridge Street</span>
+                                <span class="locationBlock__mapLocationAddress">5510 Dickinson St</span>
                                 <span class="locationBlock__mapLocationLogo"><img class="locationBlock__mapLocationLogoImage" src="<?php echo selectrum_get_image_url('logo.svg'); ?>" alt=""></span>
                             </a>
                             <?php /*

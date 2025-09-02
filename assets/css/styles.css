@@ -891,8 +891,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  --color-primary: #6dbe4b;
-  --color-secondary: #0b7cab;
+  --color-primary: #1c99ce;
+  --color-secondary: #1c99ce;
 }
 
 .bodyInner {
@@ -1040,7 +1040,7 @@ body {
 }
 .siteHeader__buttons a svg {
   width: 24px;
-  color: #97b4ed;
+  color: #4fbae6;
   transition: color 0.3s;
 }
 @media (min-width: 1260px) {
@@ -1342,12 +1342,7 @@ body {
   .siteFooter__col1 {
     width: 50%;
     margin: 0;
-    padding: 10px 50px 0 0;
-  }
-}
-@media (min-width: 1700px) {
-  .siteFooter__col1 {
-    padding: 10px 50px 0;
+    padding: 10px 50px 0 10%;
   }
 }
 .siteFooter__col2 {
@@ -1369,7 +1364,7 @@ body {
 }
 @media (min-width: 768px) {
   .siteFooter__logo {
-    max-width: 320px;
+    max-width: 270px;
   }
 }
 @media (min-width: 1260px) {
@@ -1651,7 +1646,7 @@ body {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #97b4ed;
+  border: 1px solid #4fbae6;
   min-height: 60px;
   color: #ffffff;
   text-transform: uppercase;

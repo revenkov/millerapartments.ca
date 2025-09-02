@@ -39,7 +39,7 @@
         <div class="container">
             <div class="siteFooter__cols">
                 <div class="siteFooter__col1">
-                    <a href="<?php echo home_url(); ?>" title="Home page"><img class="siteFooter__logo" src="<?php echo selectrum_get_image_url('logo-white.svg'); ?>" alt="The Vista on Sparks logo"></a>
+                    <a href="<?php echo home_url(); ?>" title="Home page"><img class="siteFooter__logo" src="<?php echo selectrum_get_image_url('logo-white.png'); ?>" alt="logo"></a>
                 </div>
                 <div class="siteFooter__col2">
                     <div class="siteFooter__title">Experience Vibrant Seniors Living</div>

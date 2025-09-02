@@ -115,10 +115,7 @@
     @media (min-width: $laptop-min) {
       width: 50%;
       margin: 0;
-      padding: 10px 50px 0 0;
-    }
-    @media (min-width: $desktop-min) {
-      padding: 10px 50px 0;
+      padding: 10px 50px 0 10%;
     }
   }
 
@@ -136,7 +133,7 @@
     max-width: 230px;
     margin: 0 auto;
     @media (min-width: $tablet-min) {
-      max-width: 320px;
+      max-width: 270px;
     }
     @media (min-width: $laptop-min) {
       width: 100%;
