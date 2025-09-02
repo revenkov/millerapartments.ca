@@ -1,0 +1,37 @@
+@media (min-width: $laptop-min) {
+  .animate {
+    transition: 1s all;
+
+    &.from-left {
+      transform: translateX(-20px);
+
+      &.animated {
+        transform: translateX(0);
+      }
+    }
+
+    &.from-opacity0 {
+      opacity: 0;
+
+      &.animated {
+        opacity: 1;
+      }
+    }
+
+    &.from-bottom {
+      transform: translateY(40px);
+
+      &.animated {
+        transform: translateY(0);
+      }
+    }
+
+    &.from-right {
+      transform: translateX(20px);
+
+      &.animated {
+        transform: translateX(0);
+      }
+    }
+  }
+}

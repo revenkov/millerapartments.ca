@@ -1,0 +1,113 @@
+body.single {
+
+}
+
+
+.postNav {
+  position: relative;
+  text-transform: uppercase;
+  @include letter-spacing(200);
+  padding-top: 80px;
+  @media (min-width: $tablet-min) {
+    padding-top: 105px;
+  }
+  @media (min-width: $laptop-min) {
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+    background-size: auto 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      @media (pointer: fine) {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__linkPrev {
+    padding-left: 40px;
+    position: absolute;
+    left: 0;
+    top: -80px;
+    background: url("../images/angle-prev.svg") no-repeat left center;
+    @media (min-width: $tablet-min) {
+      padding-left: 60px;
+      top: -100px;
+    }
+    @media (min-width: $laptop-min) {
+      top: 0;
+    }
+    @media (min-width: $desktop-min) {
+      padding-left: 80px;
+    }
+
+    &:before {
+      content: attr(data-text-mobile);
+      @media (min-width: $tablet-min) {
+        display: none;
+      }
+    }
+
+    span {
+      display: none;
+      @media (min-width: $tablet-min) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__linkBack {
+    padding-left: 40px;
+    background: url("../images/angle-prev.svg") no-repeat left center;
+    @media (min-width: $tablet-min) {
+      display: block;
+      max-width: 165px;
+      margin: 0 auto -30px;
+    }
+    @media (min-width: $laptop-min) {
+      max-width: 160px;
+      padding-left: 45px;
+      margin: 0 auto;
+    }
+  }
+
+  &__linkNext {
+    padding-right: 40px;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    background: url("../images/angle-next.svg") no-repeat right center;
+    @media (min-width: $tablet-min) {
+      padding-right: 60px;
+      top: -100px;
+    }
+    @media (min-width: $laptop-min) {
+      top: 0;
+    }
+    @media (min-width: $desktop-min) {
+      padding-right: 80px;
+    }
+
+    &:before {
+      content: attr(data-text-mobile);
+      @media (min-width: $tablet-min) {
+        display: none;
+      }
+    }
+
+    span {
+      display: none;
+      @media (min-width: $tablet-min) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 57px;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: #ffffff;
+  outline: none;
+  margin: 25px 0 0 0;
+  padding: 14px 15px 14px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  @include letter-spacing(200);
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color .3s, border-color .3s, color .3s;
+  @media (min-width: $tablet-min) {
+    width: auto;
+    padding: 14px 20px 14px 25px;
+    margin-top: 45px;
+  }
+
+  &:hover {
+    @media (pointer: fine) {
+      background: transparent;
+      color: var(--color-primary);
+    }
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &--hoverWhite {
+
+    &:hover {
+      @media (pointer: fine) {
+        border-color: #ffffff;
+        color: #ffffff;
+      }
+    }
+  }
+}

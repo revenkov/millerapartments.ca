@@ -1,0 +1,37 @@
+/* All Variables should be declared here which makes it easier to update if something changes globally */
+
+//Responsive variables - see breakpoint manager mixin
+$xxs-max: 359px;
+
+$xs-min: $xxs-max + 1;
+$xs-max: 479px;
+
+$sm-min: $xs-max + 1;
+$sm-max: 767px;
+
+$md-min: $sm-max + 1;
+$md-max: 1023px;
+
+$lg-min: $md-max + 1;
+$lg-max: 1259px;
+
+$xl-min: $lg-max + 1;
+$xl-max: 1919px;
+
+$xxl-min: $xl-max + 1;
+$xxl-max: 2559px;
+
+$xxxl-min: $xxl-max + 1;
+$xxxl-max: 3840px;
+
+
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1259px;
+$laptop-min: 1260px;
+$laptop-max: 1699px;
+$desktop-min: 1700px;
+
+
+$color-primary: #000000;
+$color-secondary: #CCCCCC;

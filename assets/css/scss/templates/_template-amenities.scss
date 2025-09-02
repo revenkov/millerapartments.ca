@@ -1,0 +1,96 @@
+.page-template-amenities {
+
+  .postsListing {
+
+    &__teasers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0;
+      @media (min-width: $laptop-min) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__pagination {
+      margin-top: 85px;
+    }
+  }
+}
+
+
+.amenityTeaser {
+  background: #f6f6f6;
+  @media (min-width: $tablet-min) {
+    display: flex;
+    width: 100%;
+  }
+  @media (min-width: $desktop-min) {
+    width: calc( ( 100% - 10px*2 )/2 );
+    margin: 0 5px;
+  }
+
+  &__imageContainer {
+    position: relative;
+    @media (min-width: $tablet-min) {
+      width: 41%;
+    }
+    @media (min-width: 1900px) {
+      width: 49%;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      padding-bottom: 94%;
+      @media (min-width: $tablet-min) {
+        padding-bottom: 96%;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__textContainer {
+    padding: 34px 20px 34px 25px;
+    @media (min-width: $tablet-min) {
+      flex: 1;
+      padding-left: 30px;
+      padding-right: 25px;
+    }
+    @media (min-width: $laptop-min) {
+      padding: 7% 8%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    line-height: 1.05;
+    @media (min-width: $laptop-min) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 10px;
+    @media (min-width: $laptop-min) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

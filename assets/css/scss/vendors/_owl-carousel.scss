@@ -1,0 +1,8 @@
+.owl-carousel {
+
+  .owl-item {
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+}

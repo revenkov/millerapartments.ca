@@ -1,0 +1,228 @@
+.postsListing {
+
+  &__teasers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    @media (min-width: $tablet-min) {
+      margin: 0 -5px;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0;
+    @media (min-width: $tablet-min) {
+      margin: 60px 0 0;
+    }
+  }
+
+  &__nothingFound {
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    justify-content: center;
+  }
+}
+
+
+.teaserNews {
+  position: relative;
+  width: 100%;
+  @media (min-width: $tablet-min) {
+    margin: 0 5px;
+    width: calc( ( 100% - 10px*2 ) /2 );
+  }
+  @media (min-width: $desktop-min) {
+    width: calc( ( 100% - 10px*3 ) /3 );
+  }
+
+  &__imageContainer {
+    position: relative;
+    padding-bottom: 91%;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    padding: 25px;
+    @media (min-width: $tablet-min) {
+      padding: 50px 32px 55px;
+    }
+    @media (min-width: $laptop-min) {
+      padding: 50px 50px;
+    }
+    @media (min-width: $desktop-min) {
+      padding: 80px 80px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn {
+      margin-top: 0;
+    }
+
+    &:before {
+      @media (min-width: $laptop-min) {
+        content: "";
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        right: 25px;
+        bottom: 25px;
+        border: 1px solid #ffffff;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .3s, opacity .3s;
+      }
+      @media (min-width: $desktop-min) {
+        left: 40px;
+        top: 40px;
+        right: 40px;
+        bottom: 40px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @media (min-width: $lg-min) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__lnkOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+  }
+
+  &:hover {
+
+    .btn {
+      @media (min-width: $laptop-min) {
+        background: transparent;
+        border-color: #ffffff;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &:hover & {
+
+    &__overlay:before {
+      @media (min-width: $laptop-min) {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.teaserGallery {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  @media (min-width: $tablet-min) {
+    margin: 0 5px;
+    width: calc( ( 100% - 10px*2 ) /2 );
+  }
+  @media (min-width: $desktop-min) {
+    width: calc( ( 100% - 10px*3 ) /3 );
+  }
+
+  &__imageContainer {
+    position: relative;
+    padding-bottom: 91%;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    color: #ffffff;
+    background: linear-gradient(to bottom, transparent 0%, transparent 57%, rgba(0,0,0,.4) 100%);
+    z-index: 10;
+    padding: 20px;
+    @media (min-width: $laptop-min) {
+      padding: 25px 30px;
+      @include font-size(24px);
+    }
+  }
+
+  &__caption {
+
+  }
+
+  &:hover & {
+
+    &__overlay:before {
+      @media (min-width: $laptop-min) {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.formContainer {
+  margin: 50px 0 60px;
+  text-align: left;
+  @media (min-width: $tablet-min) {
+    margin: 70px 0 60px;
+  }
+  @media (min-width: $laptop-min) {
+    margin: 80px 0 60px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

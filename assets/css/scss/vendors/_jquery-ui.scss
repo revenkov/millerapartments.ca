@@ -1,0 +1,148 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    background: #f6f6f6;
+    padding: 60px 25px 34px;
+    transition: padding .3s;
+    @media (min-width: $tablet-min) {
+      padding: 25px 100px 25px 32px;
+    }
+    @media (min-width: $laptop-min) {
+      padding: 42px 54px;
+    }
+    @media (min-width: $desktop-min) {
+      padding: 42px 9%;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid var(--color-primary);
+      z-index: 10;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .3s, visibility .3s;
+      @media (min-width: $tablet-min) {
+        inset: 10px;
+      }
+      @media (min-width: $laptop-min) {
+        inset: 20px;
+      }
+      @media (min-width: $desktop-min) {
+        inset: 40px;
+      }
+    }
+
+    &.active {
+      @media (min-width: $laptop-min) {
+        padding-top: 80px;
+        padding-bottom: 75px;
+      }
+
+      &:before {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .accordion__buttonText:before {
+        content: attr(data-text-close);
+      }
+
+      .accordion__buttonAngle {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    z-index: 20;
+  }
+
+  &__header {
+    display: flex;
+    @media (min-width: $tablet-min) {
+      position: relative;
+      min-height: 70px;
+      align-items: center;
+    }
+    @media (min-width: $laptop-min) {
+      min-height: auto;
+      padding-right: 300px;
+    }
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    cursor: default;
+    padding-top: 20px;
+    transition: margin-top .3s;
+    @media (min-width: $tablet-min) {
+      padding-top: 20px;
+      padding-bottom: 17px;
+    }
+    @media (min-width: $laptop-min) {
+      padding-top: 45px;
+    }
+  }
+
+  &__button {
+    width: 66px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -60px;
+    right: -25px;
+    z-index: 20;
+    @media (min-width: $tablet-min) {
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      right: -100px;
+      transform: translateY(-50%);
+    }
+    @media (min-width: $laptop-min) {
+      width: auto;
+      right: 0;
+    }
+
+    &:hover {
+      @media (pointer: fine) {
+        text-decoration: underline;
+      }
+    }
+
+    &Text {
+      display: none;
+      @media (min-width: $laptop-min) {
+        display: block;
+        white-space: nowrap;
+        margin-right: 30px;
+        color: var(--color-secondary);
+        text-transform: uppercase;
+        @include letter-spacing(200);
+      }
+
+      &:before {
+        content: attr(data-text-default);
+      }
+    }
+
+    &Angle {
+      transition: transform .3s;
+    }
+  }
+}

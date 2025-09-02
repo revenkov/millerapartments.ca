@@ -1,0 +1,42 @@
+@import 'utils/variables';
+@import 'utils/mixin';
+
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/wpcore';
+
+@import 'components/fonts';
+@import 'components/typography';
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/tables';
+@import 'components/extras';
+
+@import 'layout/containers';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/nav';
+@import 'layout/breadcrumbs';
+@import 'layout/sections';
+@import 'layout/blocks';
+@import 'layout/popups';
+
+@import 'templates/404';
+@import 'templates/single';
+@import 'templates/single-gallery';
+@import 'templates/template-home';
+@import 'templates/template-contact';
+@import 'templates/template-careers';
+@import 'templates/template-news';
+@import 'templates/template-faq';
+@import 'templates/template-location';
+@import 'templates/template-amenities';
+@import 'templates/template-suites';
+@import 'templates/template-galleries';
+
+@import 'vendors/owl-carousel';
+@import 'vendors/jquery-ui';
+@import 'vendors/fancybox';
+@import 'vendors/select2';
+
+@import 'wp-plugins/contact-form-7';

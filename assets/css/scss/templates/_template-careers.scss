@@ -1,0 +1,125 @@
+.page-template-careers {
+
+  .sectionForm {
+    background-image: url("../images/apply-form-bg-desktop.jpg");
+    margin-top: 70px;
+
+    .fieldBlock {
+
+      .btn {
+        width: 100%;
+
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    margin-top: 10px;
+  }
+}
+
+
+.sectionJobs {
+  @media (min-width: $desktop-min) {
+    margin-top: -110px;
+  }
+}
+
+
+.jobsListing {
+  @media (min-width: $tablet-min) {
+    margin: 70px 0 0;
+  }
+
+  &__header {
+    padding: 0 24px;
+    margin-bottom: 50px;
+    @media (min-width: $tablet-min) {
+      padding: 0 32px;
+      margin-bottom: 70px;
+    }
+    @media (min-width: $laptop-min) {
+      padding: 0 54px;
+    }
+    @media (min-width: $desktop-min) {
+      padding: 0 9%;
+    }
+  }
+
+  &__teasers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__nothingFound {
+    background: #f6f6f6;
+    padding: 31px 14px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    @media (min-width: $tablet-min) {
+      padding: 31px 32px;
+    }
+    @media (min-width: $laptop-min) {
+      padding: 31px 54px;
+    }
+    @media (min-width: $desktop-min) {
+      padding: 31px 9%;
+    }
+  }
+}
+
+
+.jobTeaser {
+  position: relative;
+  background: #f6f6f6;
+  padding: 17px 24px 73px;
+  @media (min-width: $tablet-min) {
+    padding: 25px 32px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: $laptop-min) {
+    padding: 31px 54px;
+  }
+  @media (min-width: $desktop-min) {
+    padding: 31px 9%;
+  }
+
+  &__inner {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    @media (min-width: $tablet-min) {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    @include letter-spacing(-15);
+  }
+
+  .btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    margin: 0;
+    @media (min-width: $tablet-min) {
+      position: static;
+      white-space: nowrap;
+    }
+  }
+}

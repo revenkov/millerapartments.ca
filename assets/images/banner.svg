@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="purple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 363.32 78.56">
+  <polygon points="68.53 78.56 68.53 10.56 0 10.56 19.46 44.56 0 78.56 68.53 78.56" fill="#e0e0e0"/>
+  <polygon points="294.79 78.56 294.79 10.56 363.32 10.56 343.85 44.56 363.32 78.56 294.79 78.56" fill="#e0e0e0"/>
+  <rect x="33.87" width="295.58" height="68.01" fill="#fff"/>
+  <polygon points="33.87 68.01 68.53 78.56 68.53 68.01 33.87 68.01" fill="#aaa"/>
+  <polygon points="329.45 68 294.79 78.55 294.79 68 329.45 68" fill="#aaa"/>
+</svg>
