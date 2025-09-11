@@ -17,7 +17,7 @@
             <div class="wysiwyg">
                 <p>Please complete the form below and we will reach out to schedule your private tour.</p>
                 <div class="formContainer"><?php echo do_shortcode('[contact-form-7 id="b86d9e1" title="Book a tour"]'); ?></div>
-                <p>Call and book your tour today.</p>
+                <p>One of our team members will be in touch shortly to confirm your tour.</p>
             </div>
         </div>
     </section>
