@@ -21,7 +21,18 @@
     $instagram = get_field('instagram', 'options');
     $linkedin = get_field('linkedin', 'options');
     $tiktok = get_field('tiktok', 'options');
+    $introduction = get_field('introduction');
     ?>
+
+    <section class="section sectionForm sectionForm--bg">
+        <div class="container container--narrow">
+            <div class="wysiwyg">
+                <?php echo $introduction;?>
+                <div class="formContainer"><?php echo do_shortcode('[contact-form-7 id="3283b25" title="Contact us"]'); ?></div>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="container">
             <div class="locationBlock">
@@ -89,17 +100,6 @@
             </div>
         </div>
     </section>
-
-
-    <section class="section sectionForm sectionForm--bg">
-        <div class="container container--narrow">
-            <div class="wysiwyg">
-                <h2>Have a Question?</h2>
-                <div class="formContainer"><?php echo do_shortcode('[contact-form-7 id="3283b25" title="Contact us"]'); ?></div>
-            </div>
-        </div>
-    </section>
-
 
 <?php endwhile; ?>
 
