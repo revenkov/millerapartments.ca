@@ -80,6 +80,7 @@
             <div class="centerText wysiwyg"><?php echo $content; ?></div>
 
             <div class="floorPlans">
+                <?php if ( !empty( array_filter($card_1) ) ) : ?>
                 <div class="floorPlans__item">
                     <div class="floorPlans__itemContainer">
                         <h3 class="floorPlans__itemTitle"><?php echo $card_1['title']; ?></h3>
@@ -88,6 +89,8 @@
                     <a class="floorPlans__itemBtn btn" href="<?php echo $card_1['button']['url']; ?>"><?php echo $card_1['button']['title']; ?></a>
                     <a class="floorPlans__itemOverlay" href="<?php echo $card_1['button']['url']; ?>" title="<?php echo $card_1['button']['title']; ?>"></a>
                 </div>
+                <?php endif; ?>
+                <?php if ( !empty( array_filter($card_2) ) ) : ?>
                 <div class="floorPlans__item">
                     <div class="floorPlans__itemContainer">
                         <h3 class="floorPlans__itemTitle"><?php echo $card_2['title']; ?></h3>
@@ -96,6 +99,8 @@
                     <a class="floorPlans__itemBtn btn" href="<?php echo $card_2['button']['url']; ?>"><?php echo $card_2['button']['title']; ?></a>
                     <a class="floorPlans__itemOverlay" href="<?php echo $card_2['button']['url']; ?>" title="<?php echo $card_2['button']['title']; ?>"></a>
                 </div>
+                <?php endif; ?>
+                <?php if ( !empty( array_filter($card_3) ) ) : ?>
                 <div class="floorPlans__item">
                     <div class="floorPlans__itemContainer">
                         <h3 class="floorPlans__itemTitle"><?php echo $card_3['title']; ?></h3>
@@ -104,6 +109,7 @@
                     <a class="floorPlans__itemBtn btn" href="<?php echo $card_3['button']['url']; ?>"><?php echo $card_3['button']['title']; ?></a>
                     <a class="floorPlans__itemOverlay" href="<?php echo $card_3['button']['url']; ?>" title="<?php echo $card_3['button']['title']; ?>"></a>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>
