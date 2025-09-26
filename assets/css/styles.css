@@ -1860,6 +1860,28 @@ body {
 .primaryMenu > li.menu-item-has-children.open > a:after {
   transform: rotate(180deg);
 }
+.primaryMenu > li.menu-item-contact a {
+  background: transparent;
+  padding: 0 20px;
+  min-height: 44px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 0 1px #4fbae6;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+@media (min-width: 1700px) {
+  .primaryMenu > li.menu-item-contact a {
+    padding: 0 30px;
+  }
+}
+.primaryMenu > li.menu-item-contact a:before {
+  display: none;
+}
+@media (hover: hover) {
+  .primaryMenu > li.menu-item-contact a:hover {
+    background: #ffffff;
+    color: #4fbae6;
+  }
+}
 @media (min-width: 1260px) {
   .primaryMenu > li:hover > a:before {
     visibility: visible;

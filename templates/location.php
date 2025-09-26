@@ -55,6 +55,7 @@
 
     <?php
     $quote = get_field('quote');
+    $google_map_link = get_field('google_map_link', 'options');
     ?>
     <section class="section" id="location">
         <div class="container">
@@ -69,7 +70,7 @@
                             <img class="locationBlock__mapImage" src="<?php echo selectrum_get_image_url('map.jpg'); ?>" alt="">
                         </div>
                         <div class="locationBlock__mapLegend">
-                            <a href="//maps.app.goo.gl/1NKxaWEbyto1RVup7" class="locationBlock__mapLocation" data-index="1" target="_blank">
+                            <a href="<?php echo $google_map_link; ?>" class="locationBlock__mapLocation" data-index="1" target="_blank">
                                 <span class="locationBlock__mapLocationAddress">5510 Dickinson St</span>
                                 <span class="locationBlock__mapLocationLogo"><img class="locationBlock__mapLocationLogoImage" src="<?php echo selectrum_get_image_url('logo.svg'); ?>" alt=""></span>
                             </a>
